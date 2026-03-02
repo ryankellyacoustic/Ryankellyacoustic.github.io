@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ryan Kelly Acoustic | Handmade Wood Furniture & Instrument Stands</title>
+  <meta name="description" content="Handmade wood furniture and custom music instrument stands by Ryan Kelly." />
+  <style>
+    :root { --max: 980px; --pad: 18px; }
+    body { margin:0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif; color:#111; background:#fafafa; }
+    header { padding: 56px var(--pad) 24px; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    h1 { margin:0 0 10px; font-size: 36px; letter-spacing: -0.02em; }
+    p { margin: 6px 0 0; line-height: 1.6; color:#333; font-size:16px; }
+    nav { margin-top: 18px; display:flex; gap:14px; flex-wrap: wrap; }
+    a.btn { display:inline-block; padding:11px 16px; border:1px solid #ddd; border-radius: 12px; text-decoration:none; color:#111; background:white; font-weight:500; }
+    a.btn:hover { border-color:#aaa; }
+    main { padding: 24px var(--pad) 60px; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background:white; border:1px solid #eee; border-radius: 16px; overflow:hidden; transition: transform .2s ease; }
+    .card:hover { transform: translateY(-4px); }
+    .card img { width:100%; height: 260px; object-fit: cover; display:block; }
+    .card .cap { padding: 12px 14px; font-size: 14px; color:#333; }
+    footer { padding: 24px var(--pad) 40px; color:#666; font-size: 13px; text-align:center; }
+    @media (max-width: 860px){ .grid { grid-template-columns: repeat(2, 1fr);} }
+    @media (max-width: 520px){ .grid { grid-template-columns: 1fr;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Ryan Kelly Acoustic</h1>
+      <p>Handcrafted wood furniture & custom music instrument stands.</p>
+      <nav>
+        <a class="btn" href="#work">View Work</a>
+        <a class="btn" href="mailto:ryankellyacoustic@gmail.com">Email Me</a>
+        <a class="btn" href="https://instagram.com/ryankellyacoustic" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2 id="work" style="margin:0 0 16px;">Recent Work</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/photo1.jpg" alt="Instrument Stand - Walnut">
+          <div class="cap">Instrument Stand — Walnut</div>
+        </div>
+        <div class="card">
+          <img src="images/photo2.jpg" alt="Side Table - Oak">
+          <div class="cap">Side Table — Oak</div>
+        </div>
+        <div class="card">
+          <img src="images/photo3.jpg" alt="Guitar Stand - Maple">
+          <div class="cap">Guitar Stand — Maple</div>
+        </div>
+        <div class="card">
+          <img src="images/photo4.jpg" alt="Coffee Table - Cherry">
+          <div class="cap">Coffee Table — Cherry</div>
+        </div>
+        <div class="card">
+          <img src="images/photo5.jpg" alt="Custom Shelf - Reclaimed Wood">
+          <div class="cap">Custom Shelf — Reclaimed Wood</div>
+        </div>
+        <div class="card">
+          <img src="images/photo6.jpg" alt="Ukulele Stand - Walnut">
+          <div class="cap">Ukulele Stand — Walnut</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Ryan Kelly Acoustic · Ryankellyacoustic.com
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
