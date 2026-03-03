@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ryan Kelly Acoustic | Custom Instrument Stands & Woodcraft</title>
+<meta name="description" content="Handcrafted custom instrument stands and fine woodwork by Ryan Kelly. Designed for musicians who value craftsmanship." />
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f4f1ec;
+  --dark: #1c1c1c;
+  --accent: #8b5e3c;
+  --max: 1100px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--dark);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+.wrap { max-width: var(--max); margin: auto; padding: 0 20px; }
+
+header {
+  position: relative;
+  height: 70vh;
+  min-height: 420px;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 0 0 10px;
+}
+.hero-sub {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: white;
+  color: var(--dark);
+}
+section {
+  padding: 80px 0;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  background: #e8e3dc;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+@media(max-width:768px){
+  h1 { font-size: 36px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="overlay"></div>
+  <div class="wrap hero-content">
+    <h1>Ryan Kelly Acoustic</h1>
+    <div class="hero-sub">Handcrafted Instrument Stands & Fine Woodcraft for Musicians</div>
+    <a class="btn" href="#work">View Work</a>
+    <a class="btn" href="mailto:ryankellyacoustic@gmail.com">Email</a>
+    <a class="btn" href="https://instagram.com/ryankellyacoustic" target="_blank">Instagram</a>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-title">Recent Work</div>
+    <div class="grid">
+      <div class="card">
+        <img src="images/photo1.jpg" alt="Custom Guitar Stand">
+        <p>Walnut Guitar Stand</p>
+      </div>
+      <div class="card">
+        <img src="images/photo2.jpg" alt="Instrument Rack">
+        <p>Custom Instrument Rack</p>
+      </div>
+      <div class="card">
+        <img src="images/photo3.jpg" alt="Music Stand">
+        <p>Minimalist Music Stand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="y"></span> Ryan Kelly Acoustic · 
+  <a href="https://ryankellyacoustic.com">Ryankellyacoustic.com</a>
+</footer>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
