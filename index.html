@@ -27,7 +27,7 @@ body {
 
 header {
   position: relative;
-  height: 35vh;
+  height: auto;
   min-height: 225px;
   background: url('images/hero.jpg') center center / cover no-repeat;
   display: flex;
@@ -82,9 +82,9 @@ section {
   gap: 25px;
 }
 .card img {
-  width: 75%;
-  height: 300px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .card p {
   margin-top: 10px;
@@ -151,6 +151,7 @@ document.getElementById("y").textContent = new Date().getFullYear();
 </body>
 
 </html>
+
 
 
 
