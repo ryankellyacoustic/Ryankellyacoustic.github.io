@@ -101,9 +101,14 @@ section {
 }
 .card img {
   width: 100%;
-  height: 300px;
-  object-fit: contain;
+  height: 260px;
+  object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 .card p {
   margin-top: 10px;
@@ -113,6 +118,10 @@ section {
   background: #f4f1ec;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
 footer {
   padding: 40px 0;
