@@ -25,18 +25,20 @@ body {
 .wrap { max-width: var(--max); margin: auto; padding: 0 20px; }
 
 header {
-  position: relative;
-  height: 38vh;              /* controlled banner height */
-  min-height: 240px;         /* keeps it usable on small screens */
-  max-height: 300px;         /* prevents it from getting huge */
-  padding: 48px 0;           /* gives breathing room for text/buttons */
+  position: sticky;
+  top: 0;
+  height: 38vh;
+  min-height: 240px;
+  max-height: 300px;
+  padding: 48px 0;
   background-size: contain;
-  background-position: 65% 65%;  /* off-center (tweak this) */
+  background-position: 65% 65%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   color: #070807;
   background-color: #f7f7f7;
+  transition: opacity 0.6s ease;
 }
   @media (max-width:768px) {
 
@@ -95,7 +97,7 @@ section {
 .grid {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 120px;
 }
 .card {
   background: #f7f7f7;
@@ -104,7 +106,7 @@ section {
   display: flex;
   align-items: center;
   gap: 40px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   opacity: 0;
   transform: translateY(40px);
@@ -120,10 +122,12 @@ section {
 /*  width: 100%; */
 /*  height: 400px;*/
 /*  object-fit: cover;*/
-  width: 420px;
+  width: 520px;
   height: auto;
   object-fit: contain;
   border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
   
 }
 .card p {
@@ -170,11 +174,12 @@ footer a {
 <body>
 
 <header>
-  <h1>Ryan Kelly Acoustic</h1>
   <div class="overlay"></div>
   <div class="wrap hero-content">
     <h1>Ryan Kelly Acoustic</h1>
-    <div class="hero-sub">Handcrafted Instrument Stands & Fine Woodcraft for Musicians</div>
+    <div class="hero-sub">
+      Handcrafted Instrument Stands & Fine Woodcraft for Musicians
+    </div>
   </div>
 </header>
   
@@ -207,10 +212,25 @@ footer a {
 </section>
 
 <footer>
-  © <span id="y"></span> Ryan Kelly Acoustic · 
-  <a href="https://ryankellyacoustic.com">Ryankellyacoustic.com</a>
-</footer>
+  <div class="footer-buttons">
+    <a class="btn" href="#work">View Work</a>
+    <a class="btn" href="mailto:you@email.com">Email</a>
+    <a class="btn" href="https://instagram.com/">Instagram</a>
+  </div>
 
+  <p>
+    © <span id="y"></span> Ryan Kelly Acoustic · 
+    <a href="https://ryankellyacoustic.com">Ryankellyacoustic.com</a>
+  </p>
+</footer>
+  
+.footer-buttons {
+  margin-bottom: 20px;
+}
+
+.footer-buttons .btn {
+  margin: 8px;
+}
 <script>
 document.getElementById("y").textContent = new Date().getFullYear();
 </script>
@@ -229,13 +249,15 @@ cards.forEach(card => {
   observer.observe(card);
 });
 </script>
-  <footer>
-  <div class="container footer-buttons">
-    <a class="btn" href="#work">View Work</a>
-    <a class="btn" href="mailto:you@email.com">Email</a>
-    <a class="btn" href="https://instagram.com/">Instagram</a>
-  </div>
-</footer>
+<script>
+const hero = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const fadePoint = 200;
+  const opacity = 1 - window.scrollY / fadePoint;
+  hero.style.opacity = opacity < 0 ? 0 : opacity;
+});
+</script>
 </body>
 
 </html>
