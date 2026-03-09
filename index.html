@@ -148,7 +148,12 @@ footer {
 footer a {
   color: black;
   text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
 }
+footer p {
+  margin: 10px 0;
+}
+
 @media(max-width:768px){
   h1 { font-size: 36px; }
   .card {
@@ -214,14 +219,18 @@ footer a {
 <footer>
   <div class="footer-buttons">
     <a class="btn" href="#work">View Work</a>
-    <a class="btn" href="mailto:you@email.com">Email</a>
     <a class="btn" href="https://instagram.com/">Instagram</a>
   </div>
 
   <p>
-    © <span id="y"></span> Ryan Kelly Acoustic · 
-    <a href="https://ryankellyacoustic.com">Ryankellyacoustic.com</a>
+    Email: <a href="mailto:ryankellyacoustic@gmail.com">ryankellyacoustic@gmail.com</a>
   </p>
+
+  <p>
+    © <span id="y"></span> Ryan Kelly Acoustic · 
+    <a href="https://ryankellyacoustic.com">ryankellyacoustic.com</a>
+  </p>
+  
 </footer>
   
 .footer-buttons {
@@ -231,6 +240,7 @@ footer a {
 .footer-buttons .btn {
   margin: 8px;
 }
+  
 <script>
 document.getElementById("y").textContent = new Date().getFullYear();
 </script>
