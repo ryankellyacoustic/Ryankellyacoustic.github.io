@@ -73,7 +73,34 @@ h1 {
 .thumbnails img:hover {
   opacity: 1;
 }
-  
+.product-details {
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.product-details h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.product-details p {
+  margin-bottom: 18px;
+}
+
+.product-details ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.product-details li {
+  margin-bottom: 8px;
+}  
+
+.inquire {
+  margin-top: 50px;
+  font-weight: 500;
+}
 </style>
   
 </head>
@@ -81,13 +108,43 @@ h1 {
 <body>
 
 <div class="product-gallery">
-  <img id="mainImage" class="product-main" src="images/sophie1.jpg" alt="Curly Maple Mandolin Stand">
+  <img id="mainImage" class="product-main" src="images/photo1.png" alt="Curly Maple Mandolin Stand">
 
   <div class="thumbnails">
-    <img src="images/sophie1.jpg" onclick="changeImage(this)">
-    <img src="images/sophie2.jpg" onclick="changeImage(this)">
+    <img src="images/photo1.png" onclick="changeImage(this)">
+    <img src="images/photo1.jpg" onclick="changeImage(this)">
     <img src="images/sophie3.jpg" onclick="changeImage(this)">
   </div>
+</div>
+
+<div class="product-details">
+
+  <h2>Details</h2>
+
+  <p>
+    The Sophie is handcrafted from curly maple and designed specifically
+    for mandolin players who want both stability and refined simplicity.
+  </p>
+
+  <p>
+    Each stand is shaped, sanded, and finished by hand using natural oil
+    to enhance the wood grain while providing long-lasting durability.
+  </p>
+
+  <ul>
+    <li>Solid curly maple construction</li>
+    <li>Hand-applied natural oil finish</li>
+    <li>soft neck support</li>
+    <li>Compact, minimalist footprint</li>
+    <li>Made in Colorado</li>
+  </ul>
+
+</div>
+<div class="inquire">
+  <p>
+    Interested in ordering The Sophie?
+    <a href="mailto:ryan@ryankellyacoustic.com">Contact me directly.</a>
+  </p>
 </div>
 <script>
 function changeImage(element) {
