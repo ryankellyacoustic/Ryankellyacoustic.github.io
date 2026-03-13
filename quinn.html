@@ -1,1 +1,155 @@
-quinn
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> The Quinn: Guitar Stand | Ryan Kelly Acoustic</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Iowan Old Style', serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.price {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+.product-gallery {
+  margin-bottom: 40px;
+}
+
+.product-main {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 15px;
+}
+
+.thumbnails img {
+  width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+}
+.product-details {
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.product-details h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.product-details p {
+  margin-bottom: 18px;
+}
+
+.product-details ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.product-details li {
+  margin-bottom: 8px;
+}  
+
+.inquire {
+  margin-top: 50px;
+  font-weight: 500;
+}
+</style>
+  
+</head>
+
+<body>
+
+<div class="product-gallery">
+  <img id="mainImage" class="product-main" src="images/walnutguitarstand1.webp" alt="Curly Maple Mandolin Stand">
+
+  <div class="thumbnails">
+    <img src="images/walnutguitarstand1.webp" onclick="changeImage(this)">
+    <img src="images/photo2.jpg" onclick="changeImage(this)">
+    <img src="images/photo3.jpg" onclick="changeImage(this)">
+  </div>
+</div>
+
+<div class="product-details">
+
+  <h2>Details</h2>
+
+  <p>
+    The Quinn is handcrafted from hardwoods and designed specifically
+    for guitar players who want both stability and refined simplicity.
+  </p>
+
+  <p>
+    Each stand is shaped, sanded, and finished by hand using natural oil
+    to enhance the wood grain while providing long-lasting durability.
+  </p>
+
+  <ul>
+    <li>Hardwood construction</li>
+    <li>Hand-applied oil finish</li>
+    <li>Soft neck support</li>
+    <li>Compact, minimalist footprint</li>
+    <li>Made in Colorado</li>
+  </ul>
+
+</div>
+<div class="inquire">
+  <p>
+    Interested in ordering The Sophie?
+    <a href="mailto:ryan@ryankellyacoustic.com">Contact me directly.</a>
+  </p>
+</div>
+<script>
+function changeImage(element) {
+  document.getElementById("mainImage").src = element.src;
+}
+</script>
+</body>
+</html>
