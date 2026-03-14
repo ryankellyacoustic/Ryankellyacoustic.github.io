@@ -18,11 +18,14 @@
 
 :root {
   --bg: #f7f7f7;
-  --dark: #f7f7f7;
-  --accent: #f7f7f7;
+  --dark: #070807;
+  --accent: #06402B;
   --max: 1100px;
 }
 * { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background: var(--bg);
@@ -39,7 +42,7 @@ header {
   gap: 30px;
   padding: 40px 40px;
   background-color: #f7f7f7;
-  color: #070807
+  color: #070807;
 }
  @media (max-width:768px){
   header {
@@ -50,11 +53,6 @@ header {
     width: 70px;
     height: auto;
   }
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: #f7f7f7;
 }
 .site-logo {
   position: absolute;
@@ -176,7 +174,6 @@ section {
 .card img:hover {
   transform: scale(1.03);
 }
-}
 .card p {
   margin-top: 10px;
   font-size: 15px;
@@ -214,7 +211,6 @@ footer p {
   opacity: 0.75;
   margin-bottom: 24px;
   }
-}
   .card:nth-child(even) {
     flex-direction: column;
   }
@@ -223,7 +219,6 @@ footer p {
     width: 100%;
     max-width: 420px;
   }
-
 }
 </style>
 </head>
@@ -288,9 +283,7 @@ footer p {
   
 </footer>
   
-.footer-buttons {
-  margin-bottom: 20px;
-}
+
   
 <script>
 document.getElementById("y").textContent = new Date().getFullYear();
