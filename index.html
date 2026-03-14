@@ -8,7 +8,13 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 <style>
+.footer-buttons {
+  margin-bottom: 20px;
+}
 
+.footer-buttons .btn {
+  margin: 8px;
+}
 
 :root {
   --bg: #f7f7f7;
@@ -27,20 +33,12 @@ body {
 .wrap { max-width: var(--max); margin: auto; padding: 0 20px; }
 
 header {
-  position: sticky;
-  top: 0;
-  height: 38vh;
-  min-height: 240px;
-  max-height: 300px;
-  padding: 48px 0;
-  background-size: contain;
-  background-position: 65% 65%;
-  background-repeat: no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
-  color: #070807;
+  gap: 30px;
+  padding: 40px 40px;
   background-color: #f7f7f7;
-  transition: opacity 0.6s ease;
 }
  @media (max-width:768px){
   header {
@@ -48,14 +46,9 @@ header {
     background-position: center;
   }
   .site-logo {
-    width: 70px;
-    top: 15px;
-    left: 15px;
+    width: 80px;
+    height: auto;
   }
-<a href="index.html">
-  <img src="images/IMG_0859.webp" class="site-logo" alt="Ryan Kelly Acoustic">
-</a>
-}
 }
 .overlay {
   position: absolute;
@@ -72,12 +65,22 @@ header {
 }
   
 .hero-content {
- position: relative;
- z-index: 2;
- max-width: 650px;
- padding-top: 60px;
- padding-left: 40px;
-  animation: fadeUp 1s ease;
+  max-width: 700px;
+  padding-top: 0;
+  padding-left: 0;
+}
+@media (max-width:768px){
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .site-logo {
+    width: 70px;
+  }
+
 }
 
 @keyframes fadeUp {
@@ -209,13 +212,6 @@ footer p {
     max-width: 420px;
   }
 
-.footer-buttons {
-  margin-bottom: 20px;
-}
-
-.footer-buttons .btn {
-  margin: 8px;
-}
 }
 </style>
 </head>
@@ -223,18 +219,10 @@ footer p {
 <body>
 
 <header>
-  <img src="images/IMG_0859.webp" class="site-logo" alt="Ryan Kelly Acoustic">
+  <a href="index.html" class="logo-link">
+    <img src="images/IMG_0859.webp" class="site-logo" alt="Ryan Kelly Acoustic">
+  </a>
 
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <h1>Ryan Kelly Acoustic</h1>
-    <div class="hero-sub">
-      Handcrafted Instrument Stands
-    </div>
-  </div>
-</header>
-  <div class="overlay"></div>
   <div class="hero-content">
     <h1>Ryan Kelly Acoustic</h1>
     <div class="hero-sub">
