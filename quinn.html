@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title> The Quinn: Guitar Stand | Ryan Kelly Acoustic</title>
+<title>Guitar Stand | Ryan Kelly Acoustic</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
@@ -26,31 +26,6 @@ h1 {
   font-size: 42px;
   margin-bottom: 20px;
 }
-.footer-buttons {
-  margin-bottom: 20px;
-}
-
-.footer-buttons .btn {
-  margin: 8px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  border: 1px solid black;
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
-  border-radius: 30px;
-  transition: all 0.2s ease;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
-.btn:hover {
-  background: #06402B;
-  color: var(--dark);
-}
-
 
 .product-image {
   width: 100%;
@@ -81,7 +56,6 @@ h1 {
   margin-bottom: 20px;
   border-radius: 12px;
 }
-
 
 .thumbnails {
   display: flex;
@@ -127,6 +101,19 @@ h1 {
   margin-top: 50px;
   font-weight: 500;
 }
+footer
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
 </style>
   
 </head>
@@ -134,12 +121,12 @@ h1 {
 <body>
 
 <div class="product-gallery">
-  <img id="mainImage" class="product-main" src="images/walnutguitarstand1.webp" alt="Curly Maple Mandolin Stand">
+  <img id="mainImage" class="product-main" src="images/photo1.png" alt="Curly Maple Mandolin Stand">
 
   <div class="thumbnails">
-    <img src="images/walnutguitarstand1.webp" onclick="changeImage(this)">
-    <img src="images/photo2.jpg" onclick="changeImage(this)">
-    <img src="images/photo3.jpg" onclick="changeImage(this)">
+    <img src="images/photo1.png" onclick="changeImage(this)">
+    <img src="images/photo1.jpg" onclick="changeImage(this)">
+    <img src="images/IMG_0735.jpeg" onclick="changeImage(this)">
   </div>
 </div>
 
@@ -148,18 +135,18 @@ h1 {
   <h2>Details</h2>
 
   <p>
-    The Quinn is handcrafted from hardwoods and designed specifically
-    for guitar players who want both stability and refined simplicity.
+    The Quinn is handcrafted from hardwood and designed specifically
+    for musicians who want both stability and refined simplicity.
   </p>
 
   <p>
-    Each stand is shaped, sanded, and finished by hand using natural oil
+    Each stand is shaped, sanded, and finished by hand using danish oil
     to enhance the wood grain while providing long-lasting durability.
   </p>
 
   <ul>
     <li>Hardwood construction</li>
-    <li>Hand-applied oil finish</li>
+    <li>Hand-applied danish oil finish</li>
     <li>Soft neck support</li>
     <li>Compact, minimalist footprint</li>
     <li>Made in Colorado</li>
@@ -168,7 +155,7 @@ h1 {
 </div>
 <div class="inquire">
   <p>
-    Interested in ordering The Sophie?
+    Interested in ordering The Quinn?
     <a href="mailto:ryan@ryankellyacoustic.com">Contact me directly.</a>
   </p>
 </div>
@@ -178,4 +165,20 @@ function changeImage(element) {
 }
 </script>
 </body>
+<footer>
+  <div class="footer-buttons">
+    <a class="btn" href="index.html">View Work</a>
+    <a class="btn" href="https://instagram.com/">Instagram</a>
+  </div>
+
+  <p>
+    Email: <a href="mailto:ryan@ryankellyacoustic.com">ryan@ryankellyacoustic.com</a>
+  </p>
+
+  <p>
+    © <span id="y"></span> Ryan Kelly Acoustic · 
+    <a href="https://ryankellyacoustic.com">ryankellyacoustic.com</a>
+  </p>
+  
+</footer>
 </html>
