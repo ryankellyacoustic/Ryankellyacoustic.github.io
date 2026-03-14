@@ -47,11 +47,28 @@ header {
     background-size: contain;
     background-position: center;
   }
+  .site-logo {
+    width: 70px;
+    top: 15px;
+    left: 15px;
+  }
+<a href="index.html">
+  <img src="images/logo.png" class="site-logo" alt="Ryan Kelly Acoustic">
+</a>
+}
 }
 .overlay {
   position: absolute;
   inset: 0;
   background: #f7f7f7;
+}
+.site-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 90px;
+  height: auto;
+  z-index: 3;
 }
   
 .hero-content {
@@ -206,6 +223,17 @@ footer p {
 <body>
 
 <header>
+  <img src="images/logo.png" class="site-logo" alt="Ryan Kelly Acoustic">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Ryan Kelly Acoustic</h1>
+    <div class="hero-sub">
+      Handcrafted Instrument Stands
+    </div>
+  </div>
+</header>
   <div class="overlay"></div>
   <div class="hero-content">
     <h1>Ryan Kelly Acoustic</h1>
