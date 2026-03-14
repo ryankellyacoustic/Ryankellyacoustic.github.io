@@ -6,7 +6,18 @@
 <title>Curly Maple Mandolin Stand | Ryan Kelly Acoustic</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<header>
+  <img src="images/logo.png" class="site-logo" alt="Ryan Kelly Acoustic">
 
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Ryan Kelly Acoustic</h1>
+    <div class="hero-sub">
+      Handcrafted Instrument Stands
+    </div>
+  </div>
+</header>
 <style>
 body {
   margin: 0;
@@ -14,6 +25,10 @@ body {
   background: #f7f7f7;
   color: #111;
 }
+
+<a href="index.html">
+  <img src="images/logo.png" class="site-logo" alt="Ryan Kelly Acoustic">
+</a>
 
 .wrap {
   max-width: 900px;
@@ -33,12 +48,27 @@ h1 {
   display: block;
   margin-bottom: 40px;
 }
+@media (max-width:768px){
 
+  .site-logo {
+    width: 70px;
+    top: 15px;
+    left: 15px;
+  }
+
+}
 .price {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
+.site-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 90px;
+  height: auto;
+  z-index: 3;
+}
 .back-link {
   display: inline-block;
   margin-top: 40px;
