@@ -127,6 +127,10 @@ header {
 }
 .product-gallery {
   margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
 section {
   padding: 80px 0;
 }
@@ -148,8 +152,9 @@ section {
   margin-bottom: 20px;
   border-radius: 12px;
 }
-  .thumbnails img:hover 
-
+  .thumbnails img:hover {
+  opacity: 1;
+  }
   .product-details {
   margin-top: 40px;
   max-width: 700px;
@@ -314,8 +319,7 @@ function changeImage(element) {
   document.getElementById("mainImage").src = element.src;
 }
 </script>
-</body>
-<footer>
+  <footer>
   <div class="footer-buttons">
     <a class="btn" href="index.html">View Work</a>
     <a class="btn" href="https://instagram.com/">Instagram</a>
@@ -331,4 +335,5 @@ function changeImage(element) {
   </p>
   
 </footer>
+</body>
 </html>
