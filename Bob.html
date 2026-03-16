@@ -1,1 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Bob - Record Console | Ryan Kelly Acoustic</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<style>
+.footer-buttons {
+  margin-bottom: 20px;
+}
+
+.footer-buttons .btn {
+  margin: 8px;
+}
+
+:root {
+  --bg: #f7f7f7;
+  --dark: #070807;
+  --accent: #06402B;
+  --max: 1100px;
+}
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--dark);
+  font-family: 'Iowan Old Style';
+  line-height: 1.6;
+}
+.wrap { max-width: var(--max); margin: auto; padding: 0 20px; }
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 40px;
+  background-color: #f7f7f7;
+  color: #070807;
+}
+ @media (max-width:768px){
+  header {
+    background-size: contain;
+    background-position: center;
+  }
+  .site-logo {
+    width: 70px;
+    height: auto;
+  }
+}
+.site-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 70px;
+  height: auto;
+  z-index: 3;
+}
+.hero-content {
+  max-width: 450px;
+  padding-top: 0px;
+  padding-left: 30px;
+}
+@media (max-width:768px){
+
+  header {
+    flex-direction: row;
+    text-align: left;
+    gap: 15px;
+  }
+
+  .site-logo {
+    width: 70px;
+  }
+
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 500;
+  margin: 0 0 12px;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+  
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+  margin-bottom: 8px;
+
+}
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.btn:hover {
+  background: #06402B;
+  color: var(--dark);
+}
+.product-gallery {
+  margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  padding: 80px 0;
+}
+.thumbnails {
+  display: flex;
+  gap: 15px;
+}
+  .thumbnails img {
+  width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  }
+.product-main {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .thumbnails img:hover {
+  opacity: 1;
+  }
+  .product-details {
+  margin-top: 40px;
+  max-width: 700px;
+  }
+  .product-details h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  .product-details ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s cubic-bezier(.22,.61,.36,1);
+}  
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card img {
+  width: 100%;
+/*  height: 400px;*/
+/*  object-fit: cover;*/
+  aspect-ratio: 3/4;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+.card p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+}
+  .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background: #f7f7f7;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+footer p {
+  margin: 10px 0;
+}
+
+@media(max-width:768px){
+  h1 { font-size: 22px; }
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+  margin-bottom: 24px;
+  }
+  .card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="index.html" class="logo-link">
+    <img src="images/IMG_0859.webp" class="site-logo" alt="Ryan Kelly Acoustic">
+  </a>
+
+  <div class="hero-content">
+    <h1>Ryan Kelly Acoustic</h1>
+    <div class="hero-sub">
+      Handcrafted Instrument Stands
+    </div>
+  </div>
+</header>
+<div class="product-gallery">
+  <img id="mainImage" class="product-main" src="images/photo3.jpeg" alt="The Bob - Record Console">
+
+  <div class="thumbnails">
+    <img src="images/photo3.jpeg" onclick="changeImage(this)">
+    <img src="images/bob3.jpeg" onclick="changeImage(this)">
+  </div>
+</div>
+
+<div class="product-details">
+
+  <h2>Details</h2>
+
+  <p>
+    The Bob is handcrafted from ambrose maple and walnut. Designed in house mixing inspiration from vinyl record consoles from thr mid centry.
+  </p>
+
+  <p>
+    This design is unique from thr ground up.
+  </p>
+
+  <ul>
+    <li>Solid ambrose maple & black walnut construction</li>
+    <li>Hand-applied oil finish</li>
+    <li>50 Watt Internal Amp</li>
+    <li>4" full range stearo speakers</li>
+    <li>Led lighting</li>
+    <li>U-Turn belt driven turntable w/preamp</li>
+    <li>Bluetooth 4.0</li>
+    <li>Made in Colorado</li>
+  </ul>
+
+</div>
+<div class="inquire">
+  <p>
+    Interested in ordering The Bob?
+    <a href="mailto:ryan@ryankellyacoustic.com">Contact me directly.</a>
+  </p>
+</div>
+<script>
+function changeImage(element) {
+  document.getElementById("mainImage").src = element.src;
+}
+</script>
+  <footer>
+  <div class="footer-buttons">
+    <a class="btn" href="index.html">View Work</a>
+    <a class="btn" href="https://instagram.com/">Instagram</a>
+  </div>
+
+  <p>
+    Email: <a href="mailto:ryan@ryankellyacoustic.com">ryan@ryankellyacoustic.com</a>
+  </p>
+
+  <p>
+    © <span id="y"></span> Ryan Kelly Acoustic · 
+    <a href="https://ryankellyacoustic.com">ryankellyacoustic.com</a>
+  </p>
+  
+</footer>
+</body>
+</html>
