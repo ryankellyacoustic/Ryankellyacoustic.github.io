@@ -141,13 +141,8 @@ section {
   gap: 120px;
 }
 .card {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  max-width: 1000px;
+  diplay: block;
+  max-width: 520px;
   margin: auto;
   opacity: 0;
   transform: translateY(40px);
@@ -165,9 +160,9 @@ section {
   aspect-ratio: 3/4;
   max-width: 520px;
   height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
   transition: transform 0.3s ease;
 }
 
@@ -256,6 +251,7 @@ footer p {
 </div>   
       <div class="card">
         <a href="Bob.html">
+        </a>
         <img src="images/hero.jpg" alt= "The Bob - Walnut & Maple Record Console - $2,000">
         <p>The Bob Record Console - $2,000</p>
       </div>
